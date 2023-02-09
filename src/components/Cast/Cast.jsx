@@ -1,7 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { allFetch } from 'Services/api';
-import s from './Cast.module.css';
 
 const Cast = () => {
   const { movieId } = useParams();
@@ -23,15 +22,15 @@ const Cast = () => {
     <div>
       <ul>
         {actors.map(actor => (
-          <li className={s.castItem} key={actor.id}>
+          <li key={actor.id}>
             <img
               width="200px"
               src={'https://image.tmdb.org/t/p/w500' + actor.profile_path}
               alt={actor.original_name}
             />
-            <div className={s.itemDescr}>
-              <p className={s.personName}>{actor.name}</p>
-              <p className={s.character}>Character: {actor.character}</p>
+            <div>
+              <p>{actor.name}</p>
+              <p>Character: {actor.character}</p>
             </div>
           </li>
         ))}
