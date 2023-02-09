@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import css from './Home.module.css';
 
-export const HomePage = () => {
+export const Home = () => {
   return (
     <header>
       <div className={css.navContainer}>
