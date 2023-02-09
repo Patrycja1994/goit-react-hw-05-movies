@@ -25,7 +25,11 @@ const Cast = () => {
           <li key={actor.id}>
             <img
               width="200px"
-              src={'https://image.tmdb.org/t/p/w500' + actor.profile_path}
+              src={
+                actor.profile_path
+                  ? `https://www.themoviedb.org/t/p/w500/${actor.profile_path}`
+                  : `https://www.banffventureforum.com/wp-content/uploads/2019/08/no-photo-icon-22.png`
+              }
               alt={actor.original_name}
             />
             <div>
