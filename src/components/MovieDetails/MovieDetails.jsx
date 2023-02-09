@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useLocation, Link, useParams, Outlet } from 'react-router-dom';
 import s from './MovieDetails.module.css';
-import { fetchById } from 'Services/api';
+import { fetchById } from 'services/api';
 
 const MovieDetails = () => {
   const { movieId } = useParams();

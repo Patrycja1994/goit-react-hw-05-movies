@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import css from './LinksPage.module.css';
 
-import { fetchTrending } from 'Services/api';
+import { fetchTrending } from 'services/api';
 
 function LinksPage() {
   const [movies, setMovies] = useState([]);
